@@ -30,3 +30,9 @@ Route::get("/kenalan/{nama}/{npm}", function($nama, $npm){
 });
 
 
+//Route ke halaman falkutas
+Rooute::get("/fakultas", function(){
+    $data = ["fakultas" => ["Fasilkom Rekayasa", "Fak. Ekonomi"]]
+    return view("fakultas.index", $data);
+});
+
